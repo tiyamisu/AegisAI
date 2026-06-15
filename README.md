@@ -429,27 +429,6 @@ python main.py --test
 
 ---
 
-## 🎨 Design System
-
-The UI is built on a warm **Navy + Amber** design language (`ui/theme.py`).
-
-### Color Palette
-
-| Token | Hex | Usage |
-|---|---|---|
-| `BG_DARK` | `#1A1A2E` | App root background |
-| `BG_SIDEBAR` | `#16213E` | Left navigation sidebar |
-| `BG_CARD` | `#1F2B47` | Cards, panels, chat area |
-| `BG_INPUT` | `#253354` | Input fields, text areas |
-| `ACCENT` | `#F59E0B` | Primary amber — buttons, active states |
-| `ACCENT_HOVER` | `#FBBF24` | Hover on amber elements |
-| `SUCCESS` | `#10B981` | Low risk, positive feedback |
-| `WARNING` | `#F59E0B` | Medium risk, caution |
-| `DANGER` | `#EF4444` | High risk, errors |
-| `CRITICAL` | `#FF2D55` | Critical emergency states |
-| `TEXT_PRIMARY` | `#F1F5F9` | Main body text |
-| `TEXT_SECONDARY` | `#94A3B8` | Labels, secondary info |
-
 ### Typography
 
 | Token | Font | Size | Weight | Usage |
