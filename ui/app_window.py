@@ -158,7 +158,8 @@ class AegisAIApp:
             ),
             "awareness":    lambda: AwarenessPage(self._content, self._kb),
             "assessment":   lambda: AssessmentPage(
-                self._content, self._assess_svc, self._session
+                self._content, self._assess_svc, self._session,
+                navigate_cb=self._navigate_to,
             ),
             "scam_analyzer": lambda: ScamAnalyzerPage(self._content, self._scam_svc),
             "emergency":    lambda: EmergencyPage(self._content),

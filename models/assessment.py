@@ -80,6 +80,13 @@ class AssessmentResult:
         actions         : Immediate action items
         facts           : Dict of asserted facts used for inference
         report_lines    : Formatted lines for the full report card
+        simple_score    : Simple scoring (Yes=2, NotSure=1, No=0), max 30
+        simple_pct      : Simple percentage (simple_score/30 * 100)
+        yes_count       : Number of Yes answers
+        no_count        : Number of No answers
+        not_sure_count  : Number of Not Sure answers
+        is_emergency    : Whether the result triggered emergency state
+        assessed_at     : Datetime string of when the assessment was completed
     """
     risk_level:      RiskLevel
     risk_score:      int
@@ -89,3 +96,10 @@ class AssessmentResult:
     actions:         List[str]      = field(default_factory=list)
     facts:           dict           = field(default_factory=dict)
     report_lines:    List[str]      = field(default_factory=list)
+    simple_score:    int            = 0
+    simple_pct:      float          = 0.0
+    yes_count:       int            = 0
+    no_count:        int            = 0
+    not_sure_count:  int            = 0
+    is_emergency:    bool           = False
+    assessed_at:     str            = ""
